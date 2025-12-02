@@ -18,7 +18,7 @@
         <a href="inicio.html"><img class="logo" src="images/logo.png" alt="PredictivePulse logo"></a>
 
         <div class="header-actions">
-            <button class="btn ghost" onclick="window.location.href='login.html'">Iniciar sessão</button>
+            <button class="btn ghost" onclick="window.location.href='index.html'">Iniciar sessão</button>
             <button class="btn primary" onclick="window.location.href='cadastro.html'">Criar conta</button>
         </div>
 
@@ -53,7 +53,7 @@
 
         <p class="login-link">
             Já possui uma conta?
-            <a href="login.html">Entrar</a>
+            <a href="index.html">Entrar</a>
         </p>
 
     </div>
@@ -72,7 +72,7 @@ function handleCadastro(event) {
     if (nome && empresa && email && senha) {
         alert('✓ Conta criada com sucesso!\n\nNome: ' + nome + '\nEmpresa: ' + empresa + '\nEmail: ' + email + '\n\nRedirecionando para login...');
         // Simula redirecionamento
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     }
 }
 </script>
