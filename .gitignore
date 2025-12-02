@@ -1,0 +1,30 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Node / builds
+node_modules/
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+ehthumbs.db
+Desktop.ini
+
+# OneDrive/temp
+~$*
+
+# Imagens/arquivos grandes gerados (opcional)
+# /ima/

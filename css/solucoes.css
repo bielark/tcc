@@ -1,0 +1,339 @@
+:root{
+  --blue:#2f8be6;
+  --dark:#0d0d0d;
+  --muted:#555;
+}
+
+*{margin:0; padding:0; box-sizing:border-box; font-family:Inter}
+
+/* CONTAINER */
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:20px;
+}
+
+/* HEADER */
+.site-header{
+  background:white;
+  box-shadow:0 1px 0 rgba(0,0,0,0.06);
+  padding:10px 0;
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  height:110px;
+}
+
+/* NAV */
+.nav{
+  display:flex;
+  gap:20px;
+}
+
+.nav a{
+  color:#333;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.nav .active{
+  color:var(--blue);
+  font-weight:700;
+}
+
+/* BUTTONS */
+.btn{
+  padding:10px 16px;
+  border-radius:8px;
+  border:0;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.btn.primary{
+  background:var(--blue);
+  color:white;
+  transition:0.3s;
+}
+
+.btn.primary:hover{
+  opacity:0.9;
+}
+
+.btn.ghost{
+  background:transparent;
+  border:1px solid rgba(0,0,0,0.15);
+}
+
+/* HERO */
+.hero{
+  background:#f5f7fa;
+  padding:80px 0;
+}
+
+.hero-flex{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.hero-left h1{
+  font-size:48px;
+  font-weight:800;
+  line-height:1.2;
+  margin-bottom:20px;
+}
+
+.hero-left span{
+  color:var(--blue);
+}
+
+.hero-left p{
+  font-size:18px;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+.hero-right img{
+  width:100%;
+  height:auto;
+  border-radius:12px;
+}
+
+/* SOLUÇÕES POR SETOR */
+.solutions-section{
+  padding:80px 0;
+}
+
+.solutions-section h2{
+  font-size:40px;
+  font-weight:800;
+  text-align:center;
+  margin-bottom:15px;
+}
+
+.subtitle{
+  text-align:center;
+  font-size:18px;
+  color:var(--muted);
+  margin-bottom:50px;
+}
+
+.solutions-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:24px;
+}
+
+.solution-card{
+  background:white;
+  padding:32px;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.solution-card:hover{
+  box-shadow:0 8px 24px rgba(47, 139, 230, 0.15);
+  transform:translateY(-4px);
+}
+
+.solution-card .icon{
+  font-size:48px;
+  margin-bottom:16px;
+}
+
+.solution-card h3{
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:12px;
+  color:var(--dark);
+}
+
+.solution-card p{
+  color:var(--muted);
+  line-height:1.6;
+  margin-bottom:20px;
+  font-size:15px;
+}
+
+.benefits{
+  list-style:none;
+}
+
+.benefits li{
+  font-size:14px;
+  color:var(--muted);
+  margin:8px 0;
+  line-height:1.6;
+}
+
+/* VANTAGENS */
+.advantages{
+  background:#f5f7fa;
+  padding:80px 0;
+}
+
+.advantages h2{
+  font-size:40px;
+  font-weight:800;
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.advantages-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:30px;
+}
+
+.advantage-item{
+  text-align:center;
+  padding:20px;
+}
+
+.advantage-number{
+  display:block;
+  font-size:48px;
+  font-weight:800;
+  color:var(--blue);
+  margin-bottom:16px;
+}
+
+.advantage-item h3{
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:12px;
+  color:var(--dark);
+}
+
+.advantage-item p{
+  color:var(--muted);
+  line-height:1.6;
+  font-size:15px;
+}
+
+/* CTA */
+.cta-section{
+  padding:80px 0;
+  text-align:center;
+}
+
+.cta-section h2{
+  font-size:40px;
+  font-weight:800;
+  margin-bottom:16px;
+}
+
+.cta-section p{
+  font-size:18px;
+  color:var(--muted);
+  margin-bottom:32px;
+}
+
+.cta-btn{
+  padding:14px 32px;
+  font-size:16px;
+}
+
+/* FOOTER */
+.site-footer{
+  background:#f5f7fa;
+  padding:40px 0 20px;
+  margin-top:60px;
+}
+
+.footer-inner{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  margin-bottom:30px;
+}
+
+.footer-left img{
+  height:70px;
+  margin-bottom:16px;
+}
+
+.footer-left address{
+  font-style:normal;
+  color:var(--muted);
+  line-height:1.6;
+  font-size:14px;
+}
+
+.footer-right h4{
+  font-size:16px;
+  margin-bottom:12px;
+}
+
+.footer-right ul{
+  list-style:none;
+}
+
+.footer-right ul li{
+  color:var(--muted);
+  font-size:14px;
+  margin:6px 0;
+}
+
+.copyright{
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+  padding-top:20px;
+  border-top:1px solid rgba(0,0,0,0.06);
+}
+
+/* RESPONSIVIDADE */
+@media(max-width:900px){
+  .hero-flex{
+    grid-template-columns:1fr;
+  }
+
+  .solutions-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+
+  .advantages-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+
+  .hero-left h1{
+    font-size:36px;
+  }
+}
+
+@media(max-width:600px){
+  .logo{
+    height:70px;
+  }
+
+  .hero-left h1{
+    font-size:28px;
+  }
+
+  .solutions-grid{
+    grid-template-columns:1fr;
+  }
+
+  .advantages-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-inner{
+    grid-template-columns:1fr;
+  }
+
+  .nav{
+    gap:12px;
+    font-size:14px;
+  }
+}

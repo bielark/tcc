@@ -1,0 +1,42 @@
+:root{
+  --blue:#2f8be6;
+  --dark:#0d0d0d;
+  --muted:#555;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter}
+.container{max-width:1200px;margin:0 auto;padding:20px}
+
+/* HEADER */
+.site-header{background:white;box-shadow:0 1px 0 rgba(0,0,0,0.06);padding:10px 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{height:110px}
+.nav{display:flex;gap:20px}
+.nav a{cursor:pointer;color:#333;text-decoration:none;font-weight:500}
+.nav .active{color:var(--blue);font-weight:700}
+.header-actions{display:flex;gap:12px}
+.btn{padding:10px 16px;border:0;border-radius:8px;font-weight:600;cursor:pointer}
+.btn.primary{background:var(--blue);color:white}
+.btn.ghost{background:transparent;border:1px solid rgba(0,0,0,0.15)}
+
+/* HERO DE PREÇOS */
+.pricing-hero{text-align:center;padding:60px 0;background:#e9f2ff;border-bottom:1px solid #d2e4ff}
+.pricing-hero h1{font-size:42px;font-weight:800;color:#000}
+.pricing-hero p{margin-top:10px;font-size:18px;color:#333}
+
+/* TABELA DE PREÇOS */
+.pricing-table{display:flex;gap:30px;margin:50px auto;justify-content:center}
+.pricing-card{background:white;padding:30px;border-radius:14px;box-shadow:0 6px 20px rgba(0,0,0,0.1);width:300px;text-align:center}
+.pricing-card h2{font-size:24px;margin-bottom:10px}
+.price{font-size:32px;font-weight:800;color:var(--blue);margin:10px 0 20px}
+.pricing-card ul{list-style:none;text-align:left;margin:20px 0}
+.pricing-card ul li{margin:8px 0;font-size:15px;color:var(--dark)}
+.destaque{border:3px solid var(--blue);transform:scale(1.05)}
+
+/* FOOTER */
+.site-footer{background:#f8f8f8;padding:40px 0;margin-top:50px;border-top:4px solid rgba(47,139,230,0.12)}
+.footer-inner{display:flex;justify-content:space-between;gap:30px}
+.footer-left img{height:40px}
+.footer-left address{font-style:normal;color:var(--muted);margin-top:10px;line-height:1.4}
+.footer-right ul{list-style:none;margin-top:10px}
+.footer-right li{margin-bottom:6px;color:var(--muted)}
+copyright{text-align:center;padding:10px;color:var(--muted);font-size:13px}

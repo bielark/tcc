@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - PredictivePulse</title>
+
+    <!-- Fonte e CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/log.css">
+</head>
+
+<body>
+
+<!-- ===== HEADER IGUAL AO DA PÁGINA DE PREÇOS ===== -->
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a href="inicio.html"><img class="logo" src="images/logo.png" alt="PredictivePulse logo"></a>
+
+       
+
+        <div class="header-actions">
+            <button class="btn ghost" onclick="window.location.href='login.html'">Iniciar sessão</button>
+            <button class="btn primary" onclick="window.location.href='cadastro.html'">Criar conta</button>
+        </div>
+
+    </div>
+</header>
+
+<!-- ======= FORMULÁRIO DE LOGIN ======= -->
+<section class="login-container">
+    <div class="login-box">
+
+        <h1>Entrar na plataforma</h1>
+        <p>Acesse sua conta para continuar.</p>
+
+        <form id="login-form" onsubmit="handleLogin(event)">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required placeholder="seuemail@empresa.com">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" required placeholder="Sua senha">
+
+            <button type="submit" class="btn primary login-btn">Entrar</button>
+
+        </form>
+
+        <p class="signup-link">
+            Não tem uma conta?
+            <a href="cadastro.html">Criar conta</a>
+        </p>
+    </div>
+</section>
+
+<script>
+function handleLogin(event) {
+    event.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('senha').value;
+    
+    // Validação básica
+    if (email && senha) {
+        alert('✓ Login realizado com sucesso!\n\nEmail: ' + email + '\n\nVocê será redirecionado...');
+        // Simula redirecionamento
+        window.location.href = 'inicio.html';
+    }
+}
+</script>
+
+</body>
+</html>

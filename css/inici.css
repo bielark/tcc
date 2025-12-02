@@ -1,0 +1,265 @@
+:root{
+  --blue:#2f8be6;
+  --dark:#0d0d0d;
+  --muted:#555;
+}
+
+*{margin:0; padding:0; box-sizing:border-box; font-family:Inter}
+
+/* CONTAINER */
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:20px;
+}
+
+/* HEADER — idêntico ao preço */
+.site-header{
+  background:white;
+  box-shadow:0 1px 0 rgba(0,0,0,0.06);
+  padding:10px 0;
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  height:110px; /* AUMENTADA */
+}
+
+/* NAV */
+.nav{
+  display:flex;
+  gap:20px;
+}
+
+.nav a{
+  color:#333;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.nav .active{
+  color:var(--blue);
+  font-weight:700;
+}
+
+/* BUTTONS */
+.btn{
+  padding:10px 16px;
+  border-radius:8px;
+  border:0;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.btn.primary{
+  background:var(--blue);
+  color:white;
+}
+
+.btn.ghost{
+  background:transparent;
+  border:1px solid rgba(0,0,0,0.15);
+}
+
+/* HERO */
+.hero{
+  background:#e9f2ff;
+  padding:60px 0;
+  border-bottom:1px solid #d2e4ff;
+}
+
+.hero-flex{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.hero-left h1{
+  font-size:42px;
+  font-weight:800;
+  color:#000;
+  line-height:1.1;
+}
+
+.hero-left p{
+  margin-top:12px;
+  max-width:480px;
+  color:#333;
+}
+
+.hero-right img{
+  width:460px;
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* QUEM SOMOS */
+.quem-somos{
+  padding:60px 0;
+}
+
+.grid-two{
+  display:grid;
+  grid-template-columns:1fr 430px;
+  gap:30px;
+}
+
+.quem-somos h2{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.quem-somos-image img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+/* DATATECH */
+.datatech{
+  padding:60px 0;
+  background:#fff;
+}
+
+.datatech-inner{
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
+
+.datatech-left{
+  flex:1;
+  background:linear-gradient(90deg,#4ea2f7,#2f8be6);
+  padding:30px;
+  color:white;
+  border-radius:12px;
+}
+
+.datatech-left h2{
+  font-size:32px;
+  margin-bottom:12px;
+}
+
+.datatech-right img{
+  width:240px;
+  height:240px;
+  object-fit:contain;
+}
+
+/* AIOT FLOW */
+.aiot-flow{
+  padding:60px 0 20px;
+  display:grid;
+  grid-template-columns:repeat(5, 1fr);
+  gap:20px;
+  text-align:center;
+}
+
+.flow-center{
+  grid-column:3;
+  border:2px solid var(--blue);
+  padding:16px;
+  border-radius:10px;
+  font-weight:800;
+  background:white;
+}
+
+.flow-item{
+  background:white;
+  padding:18px;
+  border-radius:12px;
+  box-shadow:0 4px 14px rgba(0,0,0,0.08);
+}
+
+.flow-item span{
+  background:var(--blue);
+  color:white;
+  display:inline-block;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  border-radius:50%;
+  margin-bottom:10px;
+}
+
+/* TESTEMUNHOS */
+.testimonials{
+  background:#f3f6fb;
+  padding:60px 0;
+}
+
+.testimonials h3{
+  text-align:center;
+  font-size:28px;
+  margin-bottom:30px;
+}
+
+.testimonials-grid{
+  display:flex;
+  gap:24px;
+  justify-content:center;
+}
+
+.testimonial-card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  max-width:45%;
+  box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+
+.testimonial-card img{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+/* FOOTER (idêntico ao preço) */
+.site-footer{
+  background:#f8f8f8;
+  padding:40px 0;
+  border-top:4px solid rgba(47,139,230,0.12);
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.footer-left img{
+  height:50px;
+}
+
+.footer-left address{
+  margin-top:12px;
+  color:var(--muted);
+}
+
+.footer-right h4{
+  margin-bottom:12px;
+}
+
+.footer-right ul{
+  list-style:none;
+}
+
+.footer-right li{
+  color:var(--muted);
+  margin-bottom:6px;
+}
+
+.copyright{
+  text-align:center;
+  padding-top:15px;
+  font-size:13px;
+  color:var(--muted);
+}
